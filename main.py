@@ -18,7 +18,6 @@ class LoginWindow(Screen):
     def build(self):
         self.title = "ATC Technology"
         self.theme_cls.theme_style = "Light"
-        Window.size = (390, 844)
     
         my_db = mysql.connector.connect(
             host = "localhost",
