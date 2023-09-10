@@ -1,7 +1,7 @@
+import kivy
 from kivymd.app import MDApp
 from kivy.lang import Builder
 from kivy.uix.screenmanager import Screen, ScreenManager
-from kivy.core.window import Window
 import mysql.connector
 
 class FirstWindow(ScreenManager):
@@ -11,7 +11,6 @@ class MainApp(MDApp):
     def build(self):
         self.title = "ATC Technology"
         self.theme_cls.theme_style = "Light"
-        Window.size = (390, 844)
 
         return Builder.load_file("styles.kv")
 
